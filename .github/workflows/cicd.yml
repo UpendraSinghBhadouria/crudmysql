@@ -18,8 +18,8 @@ jobs:
 
       - name: Create .env file
         run: |
-          echo "DB_HOST=localhost" > server/.env
-          echo "DB_USER=host.docker.internal" >> server/.env
+          echo "DB_HOST=host.docker.internal" > server/.env
+          echo "DB_USER=root" >> server/.env
           echo "DB_PASSWORD=7000882564a@A" >> server/.env
           echo "DB_DATABASE=crudmysql" >> server/.env
 
