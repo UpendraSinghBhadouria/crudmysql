@@ -40,5 +40,4 @@ jobs:
           docker rm nodejs-server || true
 
       - name: Run Docker Container
-        run: |
-          docker run --name nodejs-server -p 8001:8001 --env-file server/.env -d ${{ secrets.DOCKERHUB_USERNAME }}/nodejsserver:latest
+        run: docker run --name nodejs-server -p 8001:8001 --env-file server/.env -d ${{ secrets.DOCKERHUB_USERNAME }}/nodejsserver:latest
