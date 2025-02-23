@@ -32,7 +32,7 @@ jobs:
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/nodejsserver:latest
 
       - name: Pull Docker Image
-        run: docker pull ${{ secrets.DOCKER_USERNAME }}/nodejsserver:latest
+        run: docker pull ${{ secrets.DOCKER_USERNAME }}/nodejsserver
 
       - name: Stop and Remove Existing Container
         run: |
